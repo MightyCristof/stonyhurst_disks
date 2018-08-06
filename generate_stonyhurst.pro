@@ -20,6 +20,9 @@
 ; COMMENTS:
 ;   Font size scales with image size.
 ;   
+;   http://www.petermeadows.com/indexsolar.html
+;   http://solar-center.stanford.edu/solar-images/latlong.html
+;   
 ; EXAMPLES:
 ;   IDL> generate_stonyhurst,2048
 ;   
@@ -28,7 +31,6 @@
 ; REVISION HISTORY:
 ;   2017-Jun-23  Written by Christopher M. Carroll (Dartmouth)
 ;-----------------------------------------------------------------------------------------
-;;http://solar-center.stanford.edu/solar-images/latlong.html
 PRO generate_stonyhurst, pixlen
                                 
 
