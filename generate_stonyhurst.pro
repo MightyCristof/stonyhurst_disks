@@ -9,7 +9,7 @@
 ;   generate_stonyhurst, pixlen
 ;   
 ; INPUTS:
-;   pixlen          - Scalar length of the output overlay image in pixels.
+;   pixlen          - Scalar length of the desired overlay image in pixels.
 ;   
 ; OPTIONAL INPUTS:
 ;   
@@ -21,7 +21,7 @@
 ;   Font size scales with image size.
 ;   
 ; EXAMPLES:
-;   generate_stonyhurst, 2048
+;   IDL> generate_stonyhurst,2048
 ;   
 ; PROCEDURES CALLED:
 ;   
@@ -39,7 +39,7 @@ pushd,'overlays'
 major_grid = 10.
 minor_grid = 1.
 ;; month and latitude tilt as string and integer
-month = ['01_jan','02_feb','-3_mar','04_apr','05_may','06_jun','07_jul','08_aug','09_sep','10_oct','11_nov','12_dec']
+month = ['01_jan','02_feb','03_mar','04_apr','05_may','06_jun','07_jul','08_aug','09_sep','10_oct','11_nov','12_dec']
 lat_offstr = ['-5','-7','-7','-6','-3','+1','+4','+7','+7','+6','+3','-1']
 lat_offset = fix(lat_offstr)
 ;; longitude label position bump (0.5 = "center") to drive it toward the solar equator 
